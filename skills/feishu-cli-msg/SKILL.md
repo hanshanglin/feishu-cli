@@ -472,7 +472,7 @@ feishu-cli search messages "关键词" \
 
 Claude 发送消息时按以下流程操作：
 
-1. **确定接收者**：默认 `hepengcheng@bytedance.com`（email），或从上下文获取
+1. **确定接收者**：默认 `user@example.com`（email），或从上下文获取
 2. **选择消息类型**：
    - 用户明确指定类型 → 使用指定类型
    - **默认使用 `interactive`（卡片消息）** → 根据内容语义选择 header 颜色和合适的组件布局

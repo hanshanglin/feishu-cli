@@ -24,15 +24,15 @@ allowed-tools: Bash
    ```
 
 2. **添加权限（必须）**
-   创建后必须立即给 `hepengcheng@bytedance.com` 授予 `full_access` 权限：
+   创建后必须立即给 `user@example.com` 授予 `full_access` 权限：
    ```bash
-   feishu-cli perm add <document_id> --doc-type docx --member-type email --member-id hepengcheng@bytedance.com --perm full_access --notification
+   feishu-cli perm add <document_id> --doc-type docx --member-type email --member-id user@example.com --perm full_access --notification
    ```
 
 3. **发送通知（必须）**
    使用飞书消息通知用户文档已创建：
    ```bash
-   feishu-cli msg send --receive-id-type email --receive-id hepengcheng@bytedance.com --text "文档已创建：https://feishu.cn/docx/<document_id>"
+   feishu-cli msg send --receive-id-type email --receive-id user@example.com --text "文档已创建：https://feishu.cn/docx/<document_id>"
    ```
 
 4. **返回结果**
